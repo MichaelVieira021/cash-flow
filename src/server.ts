@@ -35,6 +35,7 @@ async function startServer(): Promise<void> {
 }
 
 export { app };
+export default app;
 
 if (!process.env.VERCEL) {
   void startServer();
