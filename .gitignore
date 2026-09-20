@@ -8,3 +8,5 @@ dist/
 /docs
 /src/config/swagger
 /database
+.vercel
+.env*

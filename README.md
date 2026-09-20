@@ -32,13 +32,10 @@ Request validado com Zod (`UserSchema`, `CategorySchema`, …). Resposta via DTO
 Requisitos: Node.js 20+ e PostgreSQL.
 
 ```bash
-cp .env.example .env   # ou crie o .env na mão
 npm install
 npm run db:migrate
 npm run dev
 ```
-
-API em `http://localhost:3000/api`.
 
 ## Variáveis de ambiente
 
@@ -78,8 +75,5 @@ Prefixo `/api`. Header `Authorization: Bearer <token>` nas rotas autenticadas.
 | Comando                     | Uso                 |
 | --------------------------- | ------------------- |
 | `npm run dev`               | Servidor com reload |
-| `npm run build`             | Compila TypeScript  |
-| `npm start`                 | Sobe o `dist`       |
-| `npm run db:migrate`        | Roda migrations     |
 | `npm run lint` / `lint:fix` | ESLint              |
 | `npm run format`            | Prettier            |

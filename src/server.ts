@@ -24,7 +24,7 @@ async function startServer(): Promise<void> {
   try {
     await connectDatabase();
 
-    app.listen(env.PORT, () => {
+    app.listen(env.PORT, '0.0.0.0', () => {
       console.log(`CashFlow API rodando em http://localhost:${env.PORT}/api`);
       console.log(`Documentação em http://localhost:${env.PORT}/api-docs`);
     });
@@ -34,4 +34,8 @@ async function startServer(): Promise<void> {
   }
 }
 
-startServer();
+export { app };
+
+if (!process.env.VERCEL) {
+  void startServer();
+}
