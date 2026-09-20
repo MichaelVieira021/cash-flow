@@ -1,7 +1,7 @@
 import { Request } from 'express';
 
 import { UserRole } from '../enums/UserRole';
-import { AuthenticatedRequest } from '../middlewares/auth.middleware';
+import { AuthenticatedRequest } from '../middlewares/authMiddleware';
 
 export function resolveOwnerUserId(req: Request, bodyUserId?: number): number {
   const request = req as AuthenticatedRequest;
