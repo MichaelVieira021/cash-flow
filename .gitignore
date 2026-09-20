@@ -1,8 +1,10 @@
 node_modules/
 dist/
+.vscode/
 .env
 .env.local
 *.log
 .DS_Store
-postman/
-migrations/
+/docs
+/src/config/swagger
+/database

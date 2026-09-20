@@ -6,4 +6,3 @@
 
 - Node.js 20+
 - PostgreSQL
-
