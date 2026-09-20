@@ -38,7 +38,7 @@ export namespace MovementDto {
   }
 
   export interface MonthDataResponse {
-    month: string;
+    month: string | number;
     income: number;
     expense: number;
     net: number;
